@@ -1,7 +1,7 @@
  
- # Laboratory Work #1
+ #Laboratory Work #1
  
- ## Title
+ ##Title
   
    Window. Window handling. Basic window's form elements
  
@@ -16,7 +16,7 @@
  +*Text Input
  +*Text
  
- ## Objectives:
+ ##Objectives:
  + Understanding and using CLI (basic level)
  + Administration of a remote linux machine using SSH
  + Ability to work remotely (remote code editing)
