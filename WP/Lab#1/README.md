@@ -1,6 +1,5 @@
  
- # Laboratory Work .#1
- +
+ # Laboratory Work #1
  ## Title
  +  Window. Window handling. Basic window's form elements.
  
