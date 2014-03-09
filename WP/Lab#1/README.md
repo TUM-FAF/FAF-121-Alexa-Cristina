@@ -4,14 +4,14 @@
  
  ##Contents
  
- +Win32 API
- + Win32 API
- + GIT
- + Programming Style Guidelines
- + Window
- + Button
- + Text Input
- + Text
+ *Win32 API
+ *Win32 API
+ *GIT
+ *Programming Style Guidelines
+ *Window
+ *Button
+ *Text Input
+ *Text
  
  ## Objectives:
  + Understanding and using CLI (basic level)
