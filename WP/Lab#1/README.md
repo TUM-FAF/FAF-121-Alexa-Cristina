@@ -1,19 +1,21 @@
- # Laboratory Work #1
- ## Title
-   Window. Window handling. Basic window's form elements
  
- ##Contents
+ +# Laboratory Work #1
  
- *Win32 API
- *Win32 API
- *GIT
- *Programming Style Guidelines
- *Window
- *Button
- *Text Input
- *Text
+ +## Title
+   Window. Window handling. Basic window's form elements.
  
- ## Objectives:
+ ## Contents:
+ +
+ +*Win32 API
+ +*Win32 API
+ +*GIT
+ +*Programming Style Guidelines
+ +*Window
+ +*Button
+ +*Text Input
+ +*Text
+ 
+ ##Objectives:
  + Understanding and using CLI (basic level)
  + Administration of a remote linux machine using SSH
  + Ability to work remotely (remote code editing)
