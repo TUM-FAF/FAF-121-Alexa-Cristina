@@ -1,17 +1,17 @@
- # Laboratory Work #1
- ## Title
-   Window. Window handling. Basic window's form elements
+ +# Laboratory Work #1
+ +## Title
+ +  Window. Window handling. Basic window's form elements
  
- ##Contents
+ +##Contents
  
- *Win32 API
- *Win32 API
- *GIT
- *Programming Style Guidelines
- *Window
- *Button
- *Text Input
- *Text
+ +*Win32 API
+ +*Win32 API
+ +*GIT
+ +*Programming Style Guidelines
+ +*Window
+ +*Button
+ +*Text Input
+ +*Text
  
  ## Objectives:
  + Understanding and using CLI (basic level)
