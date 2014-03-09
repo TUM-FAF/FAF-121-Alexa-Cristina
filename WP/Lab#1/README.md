@@ -1,10 +1,10 @@
- 
- # Laboratory Work #1.
- ## Title
+ +
+ +# Laboratory Work #1.
+ +## Title
  +  Window. Window handling. Basic window's form elements.
- 
- ## Contents:
- 
+ +
+ +## Contents:
+ +
  +*Win32 API
  +*Win32 API
  +*GIT
