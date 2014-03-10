@@ -13,6 +13,7 @@
 HINSTANCE hInst;
 TCHAR sz_class_name[] = _T("WindowClass");
 LRESULT CALLBACK windowProcedure (HWND hwnd_, UINT message_, WPARAM wParam_, LPARAM lParam_);
+BOOL CALLBACK dialogProc (HWND hdlg_, UINT message_, WPARAM wParam, LPARAM lParam);
 
 int WINAPI WinMain (HINSTANCE hThisInstance_, HINSTANCE hPrevInstance_,
                     LPSTR lpszArgument_, int nCmdShow_)
@@ -63,19 +64,64 @@ int WINAPI WinMain (HINSTANCE hThisInstance_, HINSTANCE hPrevInstance_,
 
 LRESULT CALLBACK windowProcedure (HWND hwnd_, UINT message_, WPARAM wParam_, LPARAM lParam_)
 {
+  HMENU hMenu;
+  static int cxClient, cyClient, cxIcon, cyIcon;
+  HDC hdc;
+  PAINTSTRUCT ps;
+  HINSTANCE hInstance;
   switch(message_)
   {
     case WM_CREATE:
-
+      hInstance = ((LPCREATESTRUCT) lParam_)->hInstance;
+      hMenu = CreateMenu();
       return 0;
     case WM_PAINT:
-
+      hdc = BeginPaint(hwnd_, &ps);
+      EndPaint(hwnd_, &ps);
+      return 0;
+    case WM_COMMAND:
+      hMenu = GetMenu(hwnd_);
+      switch (LOWORD(wParam_))
+      {
+        case IDM_FILE_NEW:
+        case IDM_FILE_OPEN:
+        case IDM_FILE_SAVE:
+        case IDM_FILE_SAVE_AS:
+        case IDM_APP_EXIT:
+          SendMessage(hwnd_, WM_CLOSE, 0, 0);
+          return 0;
+        case DLG_MAIN:
+          DialogBox(hInstance, TEXT("TRa Ta Ta"), hwnd_, dialogProc);
+          break;
+      }
+      return 0;
+    case WM_SIZE:
+      cxClient = LOWORD(lParam_);
+      cyClient = HIWORD(lParam_);
+      //InvalidateRect(hwnd_, &rect, TRUE);
       return 0;
     case WM_DESTROY:
       PostQuitMessage(0);
       return 0;
-    default:                  /* for messages that we don't deal with */
+    default:
       return DefWindowProc (hwnd_, message_, wParam_, lParam_);
   }
   return 0;
+}
+
+BOOL CALLBACK dialogProc (HWND hdlg_, UINT message_, WPARAM wParam, LPARAM lParam)
+{
+  switch (message_)
+  {
+    case WM_INITDIALOG:
+      return 0;
+    case WM_COMMAND:
+      switch (LOWORD(wParam))
+      {
+      //  case ID_OK:
+      //    return 0;
+      }
+      return 0;
+  }
+  return FALSE;
 }

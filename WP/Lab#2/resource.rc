@@ -7,8 +7,20 @@
 #include <richedit.h>
 #include "resource.h"
 
-
-
+//
+// Menu Resources
+//
+RESOURCE MENU DISCARDABLE
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "&New",        IDM_FILE_NEW
+    MENUITEM "&Open",       IDM_FILE_OPEN
+    MENUITEM "&Save",       IDM_FILE_SAVE
+    MENUITEM "&Save as",    IDM_FILE_SAVE_AS
+    MENUITEM "&Exit",       IDM_APP_EXIT
+  END
+END
 
 //
 // Dialog resources
