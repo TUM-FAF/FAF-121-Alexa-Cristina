@@ -1,8 +1,6 @@
-
-#Windows Programming Laboratoaries Repository
+#Windows Programming Laboratories Repository
 ============================================
-
-##Personal Information
+##Personal Information:
 
 **Student:** Alexa Cristina
 
