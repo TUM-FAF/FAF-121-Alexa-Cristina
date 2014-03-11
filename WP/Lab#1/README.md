@@ -57,7 +57,7 @@ After struggling a bit with understanding the new concepts of window programming
 
 #### Choose a Programming Style Guidline that you'll follow:
 
- [USC Aerial Robotics Programming Style Guide (C++)](https://github.com/uscrs-art/uscrs-art/wiki). I made some little changes that you can find in the  file.
+ [USC Aerial Robotics Programming Style Guide (C++)](https://github.com/uscrs-art/uscrs-art/wiki). I made some little changes that you can find in the [PSG_changes](https://github.com/TUM-FAF/FAF-121-Alexa-Cristina/blob/master/WP/Lab%231/PSG_changes.md) file.
 
 ####Add 2 buttons to window: one with default styles, one with custom styles (size, background, text color, font family, font size)
 
@@ -103,7 +103,7 @@ I made this by mentioning the case `WM_SIZE` and calling the `MoveWindow()` func
  
 #### Make elements to interact or change other elements (1 pt for 2 different interactions) **(0-2 pt)** _(ex. on button click, change text element color or position)_
 
-The first interaction is that the text elements were filled in with the text from the edit control, when the respective button was pressed (the left button for the left controls, and the right button, respectively. The second interaction is cleaning all the text controls when pressing the button CLEAR
+The first interaction is that the text elements were filled in with the text from the edit control, when the respective button was pressed (the left button for the left controls, and the right button, respectively). The second interaction is cleaning all the text controls when pressing the button CLEAR
  
 #### Change behavior of different window actions (at least 3). For ex.: on clicking close button, move window to a random location on display's working space **(1 pt)**
  
@@ -111,9 +111,9 @@ I changed the behavior of all System Buttons of the window. The `WM_CLOSE`, when
 The `WM_MINIMIZE` actually maximizes the window in the whole system's display. 
 And the `WM_MAXIMIZE`, gives a message in which it is asking the user weather he/she wants really to close the app. If the user presses YES then the windows gets the message `WM_CLOSE`, which closes the application
  
-#### Write your own PSG (you can take existent one and modify it) and argue why it is better (for you) **(1 pt)**
+#### Write your own PSG (you can take existent one and modify it) and argue why it is better for me.
  
-The changes that I made to the [USC Aerial Robotics Programming Style Guide (C++)](https://github.com/uscrs-art/uscrs-art/wiki) are some simple ones. So I described them [here]().
+The changes that I made to the [USC Aerial Robotics Programming Style Guide (C++)](https://github.com/uscrs-art/uscrs-art/wiki) are some simple ones. They do no So I described them [here](https://github.com/TUM-FAF/FAF-121-Alexa-Cristina/blob/master/WP/Lab%231/PSG_changes.md).
   
 ### Conclusions:
 
@@ -124,4 +124,4 @@ An important  remark is that each object, beginning with the window made, can no
 
 Another thing that was interesting for me to learn is the thing that the controls like buttons, edit elements and text elements are considered themselves as smaller windows -- subwindows. For each type of these controls was a specific way to customize them and set a specific style. Another interesting thing are the system flags that are used to set some particular features to a control. 
 
-The fact that I had to use a PSG, made me enthusiastic about writing nice and compact code, using one of them. I cannot say though that the features and the guidelines made me perfectly comfortable with it, but I am still learning to make it better.
+The fact that I had to use a PSG, made me enthusiastic about writing nice and compact code, using one of them. I cannot say though that the features and the guidelines made me perfectly comfortable with it, but I am still learning.
