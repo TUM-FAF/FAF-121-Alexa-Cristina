@@ -47,7 +47,7 @@ Title
  
 The programming language that I'll use will be C++. As I had to choose a PSG, I've chosen the [USC Aerial Robotics Programming Style Guide (C++)](https://github.com/uscrs-art/uscrs-art/wiki). I made some little changes that you can find in the [PSG_changes] file. 
 
-After struggling a bit with understanding the new concepts of window programming, I understood what is the role of the handle for an object. The handle is Also, the idea of receiving multiple messages in a queue and calling functions using these specific messages.
+After struggling a bit with understanding the new concepts of window programming, I understood what is the role of the handle for an object. Also, I got interested by the idea of multiple messages in a queue and calling functions using these specific messages.
  
 
 ##Practical Work:
@@ -66,27 +66,7 @@ After struggling a bit with understanding the new concepts of window programming
 	FontCustom = CreateFont(16, 0, 0, 0, FW_DONTCARE, FALSE, FALSE, FALSE, FALSE,
                             0, 0, 0, 0, "Arial");
 
-And there's also other button that I created another font specifically for it. The way I set the font, background and text color was by making the style of the button `BS_OWNERDRAW`. Afterwards I set the necessary properties of the button for the ```WM_OWNERDRAW```:.
-
-
-	SelectObject(item->hDC, FontCustom);
-	FillRect(item->hDC, &item->rcItem, WHITE_BRUSH);  
-	SelectObject(item->hDC, WHITE_BRUSH);  
-	SetTextColor(item->hDC, clrGreenish);  
-	SelectObject(item->hDC, CreatePen(PS_ENDCAP_ROUND, 2, clrGreenish));  
-	  if ((item->itemState & ODS_SELECTED)==TRUE)  
-	  {    
-		 SetTextColor(item->hDC, 0);  
-		 SelectObject(item->hDC, CreateSolidBrush(clrGreenish));    
-		 SelectObject(item->hDC, CreatePen(PS_SOLID, 1, clrGreenish));  
-	  }
-	RoundRect(item->hDC, item->rcItem.left, item->rcItem.top, item->rcItem.right,
-	            item->rcItem.bottom, 10, 10);
-	SetBkMode(item->hDC, TRANSPARENT);
-	int len = GetWindowTextLength(item->hwndItem);
-	LPSTR lpBuff = new char[len+1];
-	GetWindowText(item->hwndItem, lpBuff, len+1);
-	DrawText(item->hDC, lpBuff, len, &item->rcItem, DT_CENTER);
+And there's also other button that I created another font specifically for it. The way I set the font, background and text color was by making the style of the button `BS_OWNERDRAW`. Afterwards I set the necessary properties of the button for the ```WM_OWNERDRAW```.
 
  
 ### Add 2 text inputs to window: one with default styles, one with custom styles (size, background, text color, font family, font size)
