@@ -11,6 +11,7 @@
 #include "resource.h"
 
 HINSTANCE hInst;
+HWND hListBox, hScrBarOrizontSize;
 TCHAR sz_class_name[] = _T("WindowClass");
 LRESULT CALLBACK windowProcedure (HWND hwnd_, UINT message_, WPARAM wParam_, LPARAM lParam_);
 BOOL CALLBACK dialogProc (HWND hdlg_, UINT message_, WPARAM wParam, LPARAM lParam);
@@ -33,7 +34,7 @@ int WINAPI WinMain (HINSTANCE hThisInstance_, HINSTANCE hPrevInstance_,
   WindowClass.hIcon = LoadIcon (NULL, IDI_APPLICATION);
   WindowClass.hIconSm = LoadIcon (NULL, IDI_APPLICATION);
   WindowClass.hCursor = LoadCursor (NULL, IDC_ARROW);
-  WindowClass.lpszMenuName = NULL;                 /* No menu */
+  WindowClass.lpszMenuName = MAKEINTRESOURCE(MENU_MINE);
   WindowClass.cbClsExtra = 0;              /* No extra bytes after the window class */
   WindowClass.cbWndExtra = 0;             /* structure or the window instance */
   WindowClass.hbrBackground = (HBRUSH) CreateSolidBrush(RGB(255, 255, 255));
@@ -72,6 +73,13 @@ LRESULT CALLBACK windowProcedure (HWND hwnd_, UINT message_, WPARAM wParam_, LPA
   switch(message_)
   {
     case WM_CREATE:
+      hListBox = CreateWindowExW(WS_EX_CLIENTEDGE, L"LISTBOX",
+                                NULL, WS_CHILD|WS_VISIBLE|WS_VSCROLL|ES_AUTOVSCROLL,
+                                7, 35, 300, 200, hwnd_, NULL, hInstance, NULL);
+      hScrBarOrizontSize = CreateWindowEx(TEXT("scrollbar"), NULL,
+                                          WS_CHILD|WS_VISIBLE|WS_TABSTOP|SBS_VERT,
+                                          0, 0, 0, 0, hwnd_, (HMENU),
+                                          hInstance, NULL);
       hInstance = ((LPCREATESTRUCT) lParam_)->hInstance;
       hMenu = CreateMenu();
       return 0;
@@ -83,10 +91,10 @@ LRESULT CALLBACK windowProcedure (HWND hwnd_, UINT message_, WPARAM wParam_, LPA
       hMenu = GetMenu(hwnd_);
       switch (LOWORD(wParam_))
       {
-        case IDM_FILE_NEW:
-        case IDM_FILE_OPEN:
-        case IDM_FILE_SAVE:
-        case IDM_FILE_SAVE_AS:
+        case IDM_NEW_TRIAL:
+          return 0;
+        case IDM_CLEAR:
+          return 0;
         case IDM_APP_EXIT:
           SendMessage(hwnd_, WM_CLOSE, 0, 0);
           return 0;
@@ -118,8 +126,8 @@ BOOL CALLBACK dialogProc (HWND hdlg_, UINT message_, WPARAM wParam, LPARAM lPara
     case WM_COMMAND:
       switch (LOWORD(wParam))
       {
-      //  case ID_OK:
-      //    return 0;
+        //case ID_OK:
+        //return 0;
       }
       return 0;
   }

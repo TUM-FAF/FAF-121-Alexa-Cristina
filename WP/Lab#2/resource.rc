@@ -10,15 +10,13 @@
 //
 // Menu Resources
 //
-RESOURCE MENU DISCARDABLE
+MENU_MINE MENU DISCARDABLE
 BEGIN
-  POPUP "&File"
+  POPUP "&Menu"
   BEGIN
-    MENUITEM "&New",        IDM_FILE_NEW
-    MENUITEM "&Open",       IDM_FILE_OPEN
-    MENUITEM "&Save",       IDM_FILE_SAVE
-    MENUITEM "&Save as",    IDM_FILE_SAVE_AS
-    MENUITEM "&Exit",       IDM_APP_EXIT
+    MENUITEM "&New Trial",      IDM_NEW_TRIAL
+    MENUITEM "&Last",           IDM_CLEAR
+    MENUITEM "&Exit",           IDM_APP_EXIT
   END
 END
 
