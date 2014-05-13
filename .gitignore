@@ -31,3 +31,6 @@
 # MS Office trash
 ~*.tmp
 ~*.docx
+
+#Other
+~*.html
