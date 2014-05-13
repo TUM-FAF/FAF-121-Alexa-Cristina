@@ -33,4 +33,4 @@
 ~*.docx
 
 #Other
-~*.html
+*.html
