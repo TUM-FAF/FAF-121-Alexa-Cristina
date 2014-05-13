@@ -97,7 +97,7 @@ Here I needed `git reflog ` command to see all the commits, their ID-s and the p
 To get to previous state, I used the command:
 ```git reset HEAD@{1}```
 
-* ***GIT cherry-pick, rebase (1 pt)**
+* **GIT cherry-pick, rebase (1 pt)**
 
 First, I was on master I typed:
 
@@ -108,7 +108,7 @@ I got two files created in master from branch1. Now, I made some changes in mast
 ```git rebase master```
 What was obtained is the files from master that were commited later were now in branch1. I understood the difference between cherry-pick and rebase. Cherry-pick only copies commits
 
-* #####Create a VCS hook (1 pt)
+* **Create a VCS hook (1 pt)**
 It was a bit tricky but interesting to find out what a hook means and how it can be made. So, the hook files are usually in ```.git/hooks/``` directory. I created a post-commit file in the following way:
 
 ```
