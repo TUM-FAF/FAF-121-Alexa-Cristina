@@ -19,7 +19,7 @@ __
 ### Tasks With Points:
   - Install your application on a mobile phone. It should have somewhere your full name (on main screen, in settings...) (2pt)
     Picture:
-    ![Android on Mobile Phone ](ttps://github.com/TUM-FAF/FAF-121-Alexa-Cristina/IDE/Lab#3/screenshot_mobile.png)
+    ![Android on Mobile Phone ](https://github.com/TUM-FAF/FAF-121-Alexa-Cristina/IDE/Lab#3/screenshot_mobile.png)
   - Create 3 different views (ex. one with a list of some element, one with some settings and one with application description) (2pt)
     The applications has generally 3 tasks: Registration, Information and Needed Blood, Each of them opens a new activity, with different types of views.
   - Debug an application. At some point you'll have bugs (ex. null pointer exception). Set breakpoints and/or watchers. Find out buggy variables. (1pt)
