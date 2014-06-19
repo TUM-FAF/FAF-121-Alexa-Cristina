@@ -1,0 +1,319 @@
+    
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen_content_controls"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_red"
+    tools:context=".ActivityRegistration" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip">
+    
+	    <LinearLayout
+	        android:id="@+id/content_controls"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="10dip" >
+	        
+	        <TextView
+		        android:id="@+id/inregistrare"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dip"
+		        android:gravity="center"
+		        android:keepScreenOn="true"
+		        android:text="Registration"
+		        android:textColor="@color/white"
+		        android:textSize="22sp"
+		        android:textStyle="bold" />
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_below="@id/inregistrare"
+	            android:layout_marginTop="10dip"
+	            android:orientation="vertical" >
+	
+		        <EditText
+		            android:id="@+id/name_fill"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@color/white"
+		            android:gravity="left"
+		            android:inputType="text"
+		            android:textSize="22sp"
+		            android:textStyle="normal"
+		            android:hint="Name" />
+	
+		        <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="60dp"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal" >
+	
+		            <EditText
+		                android:id="@+id/prenumele"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_gravity="center_vertical"
+		                android:background="@color/white"
+		                android:ems="10"
+		                android:gravity="left"
+		                android:inputType="text"
+		                android:textSize="22sp"
+		                android:textStyle="normal"
+		                android:hint="Surname" />      
+	
+		        </RelativeLayout>      
+	
+	
+	            <RelativeLayout
+	                android:id="@+id/layout_birthday"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:gravity="center_vertical"
+	                android:orientation="horizontal" >
+	
+		            <TextView
+		                android:id="@+id/birthdate_label"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_below="@+id/choose_birthday"
+		                android:textColor="@color/white"
+		                android:textSize="22sp"
+		                android:layout_marginLeft="10dip"
+		                android:padding="0dip"/>
+		            
+		            <Button 
+			            android:id="@+id/choose_birthday"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@+id/birth_date"
+			            android:layout_marginLeft="10dip"
+			            android:text="Pick birthday"
+			            android:textSize = "22sp"
+			            android:textStyle="bold"/>
+	
+		            <TextView
+		                android:id="@+id/birth_date"
+		                android:layout_width="wrap_content"
+		                android:layout_height="26sp"
+		                android:layout_alignParentLeft="true"
+		                android:layout_gravity="center_vertical"
+		                android:gravity="left"
+		                android:keepScreenOn="true"
+		                android:text="Birth Date"
+		                android:textColor="@color/white"
+		                android:textSize="22sp"
+		                android:textStyle="bold" />
+		        </RelativeLayout>
+	            
+	          
+	            <RelativeLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="40dip"
+	                android:layout_marginTop="10dip"
+	                android:gravity="center"
+	                android:orientation="horizontal" >
+	
+		            <TextView
+		           	    android:id="@+id/phonenr_label"
+		                android:layout_width="wrap_content"
+		                android:layout_height="26sp"
+		                android:gravity="left"
+		                android:keepScreenOn="true"
+		                android:text="Phone Number"
+		                android:textColor="@color/white"
+		                android:textSize="22sp"
+		                android:textStyle="bold" />
+	
+		            <EditText
+		                android:id="@+id/phonenr_edit"
+		                android:layout_width="match_parent"
+		                android:layout_height="30dip"
+		                android:layout_marginLeft="10dip"
+		                android:layout_toRightOf="@id/phonenr_label"
+		                android:inputType="phone"
+		                android:background="@color/white"
+		                android:textSize="22sp" />
+	
+	            </RelativeLayout>
+	            
+	            <RelativeLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="40dip"
+	                android:layout_marginTop="10dip"
+	                android:gravity="center"
+	                android:orientation="horizontal" >
+		
+	                <TextView
+				        android:id="@+id/email_label"
+					    android:layout_width="wrap_content"
+					    android:layout_height="26sp"
+					    android:layout_gravity="center_vertical"
+					    android:gravity="left"
+					    android:keepScreenOn="true"
+					    android:text="@string/e_mail"
+					    android:textColor="@color/white"
+					    android:textSize="22sp"
+					    android:textStyle="bold" />
+		                
+		            <EditText 
+		                android:id="@+id/email_edit"
+		                android:inputType="textEmailAddress"
+		                android:layout_width="match_parent"
+		                android:layout_height="30dip"
+		                android:layout_marginLeft="10dip"
+		                android:background="@color/white"
+		                android:layout_toRightOf="@id/email_label"
+		                android:textSize="22sp" />
+		                
+	            </RelativeLayout>                 
+	            
+	       
+	            <TextView
+	                android:id="@+id/donator"
+				    android:layout_width="wrap_content"
+				    android:layout_height="26dip"
+				    android:layout_marginTop="10dip"
+				    android:gravity="left"
+				    android:keepScreenOn="true"
+				    android:text="@string/donator"
+				    android:textColor="@color/white"
+				    android:textSize="22sp"
+				    android:textStyle="bold" />
+	        
+		    	<RelativeLayout
+		    	    android:layout_width="match_parent"
+		    	    android:layout_height="40dip"
+		    	    android:gravity="center"
+		    	    android:orientation="horizontal" >
+		            
+		            <CheckBox
+		                android:id="@+id/relative"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:onClick="onCheckboxClicked"
+		                android:text="Relative"
+		                android:textColor="@color/white"
+		                android:textSize="22sp"
+		                android:textStyle="normal" />
+	
+			        <CheckBox
+			            android:id="@+id/volunteer"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:gravity="center_vertical"
+			            android:layout_toRightOf="@id/relative"
+			            android:text="Volunteer"
+			            android:textColor="@color/white"
+			            android:textStyle="normal"
+			            android:textSize="22sp"
+			            android:onClick="onCheckboxClicked"/>
+			    </RelativeLayout>
+		    
+		    	<RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal" >
+		
+			        <TextView
+		            	android:id="@+id/blood_group"
+			            android:layout_width="wrap_content"
+			            android:layout_height="26sp"
+			            android:gravity="left"
+			            android:keepScreenOn="true"
+			            android:text="Blood Group"
+			            android:textColor="@color/white"
+			            android:textSize="22sp"
+			            android:textStyle="bold" />
+		
+			        <Spinner
+			            android:id="@+id/spinner_rhezus"
+			            android:layout_width="200dip"
+			            android:layout_alignParentRight="true"
+			            android:layout_below="@+id/spinner_group"
+			            android:layout_toRightOf="@+id/blood_group"
+			            android:layout_height="wrap_content"
+			            android:padding="0dip" />
+
+			        <Spinner
+			            android:id="@+id/spinner_group"
+			            android:layout_width="200dip"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@+id/blood_group"
+			            android:gravity="center_horizontal"
+			            android:padding="0dip" />
+			                
+		       </RelativeLayout>
+		            
+				<RelativeLayout 
+				    android:layout_width="match_parent"
+				    android:id="@+id/layout_appointment"
+				    android:layout_height="wrap_content">
+			        <TextView 
+			            android:id="@+id/appointment_label"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="Appointment Date"
+			            android:textSize = "22sp"
+			            android:textColor = "@color/white"
+			            android:textStyle="bold"/>
+			        <Button 
+			            android:id="@+id/choose_appointment"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@id/appointment_label"
+			            android:layout_marginLeft="10dip"
+			            android:text="Pick a date"
+			            android:textSize = "22sp"
+			            android:textStyle="bold"/>
+				    <TextView
+			            android:id="@+id/date_appointment"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@id/choose_appointment"
+			            android:layout_alignParentRight="true"
+			            android:layout_marginLeft="10dip"
+			            android:textSize = "22sp"
+			            android:textColor = "@color/white"/>
+				</RelativeLayout>
+		        
+		        <Spinner 
+		            android:id="@+id/spinner_time"
+		            android:layout_width="wrap_content"	  
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:text="@string/hour"
+		            android:textColor="@color/white"/>
+		              
+		        <Spinner
+		            android:id="@+id/spinner_locale"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:text="@string/locality_label"
+		            android:textColor="@color/white"/>
+		        
+		        <Button
+		            android:id="@+id/register_button"
+		            style="?buttonBarButtonStyle"
+		            android:layout_width="match_parent"
+		            android:layout_height="60dip"
+		            android:text="@string/register_button"
+		            android:textSize="24sp"
+		            android:textStyle="bold"
+		            android:layout_marginBottom="20dip" />
+	        </LinearLayout>       
+	    </LinearLayout>   
+    </ScrollView>
+</FrameLayout>

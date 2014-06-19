@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_red"   
+    tools:context=".information_activity" >
+
+
+   <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+                
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/information_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:text="Why Donate Blood"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+            
+            <TextView 
+                android:id="@+id/information_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="10dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+            
+			 <!--   <Button
+                android:id="@+id/donator_who_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_weight="1"
+                android:text="@string/donator_who_text"
+                android:textSize="26sp" 
+            	android:textStyle="bold" />
+            <Button
+                android:id="@+id/before_donation_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_weight="1"
+                android:text="@string/before_donation_text"
+                android:textSize="26sp" 
+            	android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/after_donation_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_weight="1"
+                android:text="@string/after_donation_text"
+                android:textSize="24sp" 
+            	android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/blood_information_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_weight="1"
+                android:text="@string/blood_information_text"
+                android:textSize="24sp" 
+            	android:textStyle="bold" /> -->
+                
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

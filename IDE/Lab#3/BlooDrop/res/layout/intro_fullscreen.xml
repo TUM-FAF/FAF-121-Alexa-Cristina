@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_red"   
+    tools:context=".MainActivity" >
+    
+    <RelativeLayout 
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bloodrop1"></RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_gravity="bottom"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+                
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/information_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_weight="1"
+                android:text="Why Donate"
+                android:textSize="26sp" 
+            	android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/soliciting_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_weight="1"
+                android:text="Needed Blood"
+                android:textSize="26sp" 
+            	android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/donation_button"
+                android:layout_width="match_parent"
+                style="?buttonBarButtonStyle"
+                android:layout_height="20dip"
+                android:layout_weight="1"
+                android:text="Donate"
+                android:textSize="26sp" 
+            	android:textStyle="bold" />
+            
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="24dip"
+                android:layout_gravity="right"
+                android:layout_marginRight="0dip"
+                android:layout_marginBottom="0dip"
+                android:text="Alexa Cristina"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+                
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

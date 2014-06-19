@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BlooDrop</string>
+    <string name="information_button">Informație Utilă</string>
+    <string name="soliciting_button">Solicitare</string>
+    <string name="donation_button">Donare sânge</string>
+    <string name="inregistrare">Înregistrare</string>  
+     
+        
+    <string name="name_surname">Numele, Prenumele, Patronimicul</string>
+    <string name="donator">Donator:</string>  
+    <string name="relative">Rudă</string>
+    <string name="volunteer">Voluntar</string>
+    <string name="birth_date">Data nașterii:</string> 
+    <string name="blood_group">Sânge:</string> 
+    <string name="phone_number">Telefon:</string> 
+    <string name="e_mail">E-mail:</string>
+    <string name="id_number">IDNP:</string> 
+    <string name="group">Grupa</string>
+    <string name="rhezus">Rhezus</string>
+    
+    
+	
+    <string-array name="rhezus_array">
+        <item>nu știu</item>
+        <item>Rh+</item>
+        <item>Rh-</item>
+    </string-array>
+    
+    <string name="appointment_label">Programare</string>
+    <string name="hour">Ora</string>
+    <string name="locality_label">Localitatea</string>
+    
+    <string-array name="localitatea">
+        <item>Chișinau</item>
+        <item>Bălți</item>
+        <item>Tiraspol</item>
+        <item>Căușeni</item>
+    </string-array>
+        
+    <string-array name="time">
+        <item> 8:00 - 9:00</item>
+        <item> 9:00 - 10:00</item>
+        <item> 10:00 - 11:00</item>
+        <item> 11:00 - 12:00</item>
+        <item> 13:00 - 14:00</item>
+        <item> 14:00 - 15:00</item>
+        <item> 15:00 - 16:00</item>
+        <item> 16:00 - 17:00</item>
+    </string-array>
+    
+    <string name="register_button">Inregistreaza-te</string>
+    <string name="multumim_label">MULȚUMIM MULT !</string>
+    <string name="catch_back_label">În curând vă contactăm </string>
+    
+    <string name="donator_who_text">Cine poate fi donator</string>
+    <string name="before_donation_text">Înainte de donare</string>
+    <string name="after_donation_text">După donare</string>
+    <string name="blood_information_text">Grupele de sânge</string>
+    
+    
+    <string name ="blood_type">Grupa sanguină</string>
+    <string name="quantity">Numarul minim de unități necesare</string>
+</resources>

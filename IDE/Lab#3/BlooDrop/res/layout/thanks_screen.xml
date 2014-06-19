@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_red"
+    tools:context=".thanks_activity" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="400dip"
+            android:layout_marginTop="100dip"
+            android:layout_gravity="center">
+            
+            <TextView
+                android:id="@+id/thanks_label"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dip"
+	            android:gravity="center"
+	            android:text="THANK YOU"
+	            android:textSize="30sp"
+	            android:textColor="@color/white"
+	            android:textStyle="bold" />
+	        
+	        <TextView
+	            android:id="@+id/catch_back_label"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/thanks_label"
+	            android:layout_marginTop="30dip"
+	            android:gravity="center"
+	            android:text="Soon you will be contacted by the Blood Donation Center"
+	            android:textColor="@color/white"
+	            android:textSize="24sp"
+	            android:textStyle="bold" />
+	         
+	        <Button
+	           android:id="@+id/information_button"
+	           style="?buttonBarButtonStyle"
+	           android:layout_width="match_parent"
+	           android:layout_height="80dip"
+    	       android:layout_weight="3"
+	           android:layout_below="@id/catch_back_label"
+	           android:layout_marginTop="30dip"
+	           android:text="Information"
+	           android:textSize="24sp"
+	           android:textStyle="bold" />
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:layout_below="@id/information_button"
+	            android:gravity="center"
+	            android:layout_marginTop="20dip">
+	            
+	            <ImageButton
+	                android:id="@+id/facebook_button"
+	                android:layout_width="68dp"
+	                android:layout_height="66dp"
+	                android:src="@drawable/facebook" />
+
+	            <ImageButton
+	                android:layout_width="68dp"
+	                android:layout_height="66dp"
+	                android:src="@drawable/twitter" />
+
+	            <ImageButton
+	                android:id="@+id/pinterest_button"
+	                android:layout_width="68dp"
+	                android:layout_height="66dp"
+	                android:src="@drawable/pinterest"/>
+	            
+	            
+	        </LinearLayout>
+	        
+        </RelativeLayout>
+        
+    </LinearLayout>
+        
+</FrameLayout>
